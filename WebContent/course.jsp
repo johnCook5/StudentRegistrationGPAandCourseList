@@ -18,9 +18,7 @@
 	crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" integrity="sha256-p6xU9YulB7E2Ic62/PX+h59ayb3PBJ0WFTEQxq0EjHw=" crossorigin="anonymous" />
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.css" integrity="sha256-E1uqV+d412nbSI+oqDMIQsTSttP+FS7Bxwc7mQdQYOo=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.css" integrity="sha256-mEMD30TTg+vIEGUmHHgcgSOgm0FBfLipyQ97Jr0TTH8=" crossorigin="anonymous" />
- -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -44,13 +42,14 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Project name</a>
+			<a class="navbar-brand" href="#">Student Registration</a>
 		</div>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
 				<li class="#about"><a href="#about">About</a></li>
-				<li class="#contact"><a href="#contact">Contact</a></li>
+				<li class="#contact"><a href="#contact">Contact Us</a></li>
+				
 			</ul>
 		</div>
 	</div>
@@ -90,6 +89,7 @@
 			</select>
 			<br>
 			<br>
+			<label for="weekday">Class Meeting Days</label>
 			<div class="weekDays-selector">
 				<input type="checkbox" name="weekday" value="MONDAY" id="weekday-mon" class="weekday" />
 				<label for="weekday-mon">M</label>
@@ -107,12 +107,12 @@
 			
 			<label for="courseStartDate">Start Date</label>
 			<input type="date" id= "CourseStartDAte" name="courseStartDate"
-				value="2018-07-22"
+				placeholder="Select Start Date"
 				min="2019-01-01" max="2020-12-31">
 			<br>
 			<br>
 			<label for="courseTime">Course Time</label>
-			<input type="time" name="courseTime" id="courseTime">
+			<input type="time" name="courseTime" id="courseTime" placeholder="Start Time">
 			<br>
 			<br>
 			<label for="roomNumberString">Assigned Room</label>
